@@ -4,9 +4,9 @@
 //   => [11, 12, 13]
 function greaterThanTen(numbers) {
   let highNumbers = []
-  for (cosnt number of numbers){
+  for (const number of numbers){
     if (number > 10){
-      highnumbers.push(number)
+      highNumbers.push(number)
     }
   }
   return highNumbers
@@ -16,7 +16,17 @@ function greaterThanTen(numbers) {
 // Ex.:
 //   bWords(['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']);
 //   => ['banana', 'Bonobo]
-function bWords(words) {}
+function bWords(words) {
+  let b = []
+    for (const word of words){
+      if (word.inlcudes("b"))
+      b.push(words)
+    } else {(word.includes("B"))
+      b.push(words)
+    }
+     return b
+    }
+
 
 // Add all the elements from additionalItems to the end of originalArray.
 // Return the originalArray..
