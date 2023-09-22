@@ -2,7 +2,7 @@
 // Ex.:
 //   divide(10, 2);
 //   => 5
-function divide(x, y) {
+function divide(x, y){
   console.log(x / y);
 }
 

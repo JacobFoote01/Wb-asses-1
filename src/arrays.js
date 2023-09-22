@@ -17,16 +17,16 @@ function greaterThanTen(numbers) {
 //   bWords(['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']);
 //   => ['banana', 'Bonobo]
 function bWords(words) {
-  let b = []
-    for (const word of words){
-      if (word.includes("b"))
-      b.push(words)
-    } if {
-      (word.includes("B"))
-      b.push(words)
-    }
-     return b
-    }
+ // let b = []
+   // for (const word of words){
+     // if (word.includes("b"))
+     // b.push(words)
+    //} if {
+     // (word.includes("B"))
+      //b.push(words)
+    //}
+     //return b
+  }
 
 
 // Add all the elements from additionalItems to the end of originalArray.
@@ -34,7 +34,10 @@ function bWords(words) {
 // Ex.:
 //  extend([1, 2, 3], [4, 5, 6]);
 //  => [1, 2, 3, 4, 5, 6]
-function extend(originalArray, additionalItems) {}
+function extend(originalArray, additionalItems) {
+let originalArray = []
+
+}
 
 // Return an array of all items with the given length.
 // Ex.:
