@@ -22,13 +22,17 @@ function average(x, y) {
 // Ex.:
 //   approximatelyEqual(10.001, 10);
 //   => true
-function approximatelyEqual(x, y) {}
+function approximatelyEqual(x, y) {
+
+}
 
 // Given a first name and last name, return a full name in the format "FIRST LAST"
 // Ex.:
 //   fullName('John', 'Doe');
 //   => 'John Doe'
-function fullName(firstName, lastName) {}
+function fullName(firstName, lastName) {
+  
+}
 
 // Generate the sentence "PERSON was drinking BEVERAGE at LOCATION" using the
 // person, beverage and location provided.

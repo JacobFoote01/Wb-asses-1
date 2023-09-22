@@ -19,9 +19,10 @@ function greaterThanTen(numbers) {
 function bWords(words) {
   let b = []
     for (const word of words){
-      if (word.inlcudes("b"))
+      if (word.includes("b"))
       b.push(words)
-    } else {(word.includes("B"))
+    } if {
+      (word.includes("B"))
       b.push(words)
     }
      return b
