@@ -23,7 +23,13 @@ function average(x, y) {
 //   approximatelyEqual(10.001, 10);
 //   => true
 function approximatelyEqual(x, y) {
-  
+  const absoluteValue = Math.abs(x - y);
+
+  if (absoluteValue < 0.001) {
+   return true;
+ } else {
+   return false;
+ }
 }
 
 // Given a first name and last name, return a full name in the format "FIRST LAST"
@@ -31,7 +37,7 @@ function approximatelyEqual(x, y) {
 //   fullName('John', 'Doe');
 //   => 'John Doe'
 function fullName(firstName, lastName) {
-  return('firstName' + 'lastName');
+  return(firstName + " " + lastName);
 }
 
 // Generate the sentence "PERSON was drinking BEVERAGE at LOCATION" using the
