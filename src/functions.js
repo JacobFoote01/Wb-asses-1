@@ -74,7 +74,7 @@ function stickyCase(string) {
   let newString = ''
 
   for (let i = 0; i < string.length; i++) {
-    const isEven = i % 2 === 0;
+    const isEven = (i + 1) % 2 === 0;
 
     if (isEven) {
       newString = newString + string[i].toUpperCase()
@@ -100,12 +100,12 @@ function stickyCase(string) {
 //   leetspeak('javascript');
 //   => 'j4v45cr1p7'
 function leetspeak(string) {
-string.replaceAll('a', '4')
-string.replaceAll('e', '3')
-string.replaceAll('i', '1')
-string.replaceAll('o', '0')
-string.replaceAll('s', '5')
-string.replaceAll('t', '7')
+string = string.replaceAll('a', '4')
+string = string.replaceAll('i', '1')
+string = string.replaceAll('o', '0')
+string = string.replaceAll('e', '3')
+string = string.replaceAll('t', '7')
+string = string.replaceAll('s', '5')
 
 return string
 }
