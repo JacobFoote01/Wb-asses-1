@@ -3,7 +3,7 @@
 //   divide(10, 2);
 //   => 5
 function divide(x, y){
-  console.log(x / y);
+  return(x / y); 
 }
 
 // Return the average of x and y.
@@ -13,16 +13,17 @@ function divide(x, y){
 //   average(10, 2);
 //   => 6
 function average(x, y) {
-  sum = (x + y);
-  console.log(sum / 2)
+  let sum = (x + y);
+  return(sum / 2);
 }
 
 // Return true if x and y are mostly equivalent up to a tolerance of 0.001.
-// In other words, return true if the aboslute value of x - y is less than 0.001.
+// In other words, return true if the absolute value of x - y is less than 0.001.
 // Ex.:
 //   approximatelyEqual(10.001, 10);
 //   => true
 function approximatelyEqual(x, y) {
+  
 
 }
 
@@ -31,7 +32,7 @@ function approximatelyEqual(x, y) {
 //   fullName('John', 'Doe');
 //   => 'John Doe'
 function fullName(firstName, lastName) {
-  
+  return('firstName' + 'lastName');
 }
 
 // Generate the sentence "PERSON was drinking BEVERAGE at LOCATION" using the
