@@ -17,13 +17,9 @@ function greaterThanTen(numbers) {
 //   bWords(['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']);
 //   => ['banana', 'Bonobo]
 function bWords(words) {
-  let b = []
-    for (const word of words){
-      if word.includes("b");
-      b.push(words);
-    } if {
-      word.includes("B");
-      b.push(words);
+  let b = [];
+    for (const word of words) {
+      if (word[0].toUppercase() === "B") b.push(word);
     }
      return b
   }

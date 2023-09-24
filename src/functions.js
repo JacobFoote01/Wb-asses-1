@@ -24,7 +24,6 @@ function average(x, y) {
 //   => true
 function approximatelyEqual(x, y) {
   
-
 }
 
 // Given a first name and last name, return a full name in the format "FIRST LAST"
