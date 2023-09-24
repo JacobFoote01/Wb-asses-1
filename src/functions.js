@@ -45,19 +45,47 @@ function fullName(firstName, lastName) {
 // Ex.:
 //   generateSentence('Kay', 'coffee', 'the local cafe');
 //   => 'Kay was drinking coffee at the local cafe.'
-function generateSentence(person, beverage, location) {}
+function generateSentence(person, beverage, location) {
+  return(`${person} was drinking ${beverage} at ${location}.`);
+}
 
-// Return the given string with all vowels replced with '*' characters.
+// Return the given string with all vowels replaced with '*' characters.
 // Ex.:
 //   censorVowels('javascript');
 //   => 'j*v*scr*pt'
-function censorVowels(string) {}
+function censorVowels(string) {
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+  for (let i = 0; i < string.length; i++) {
+    if (vowels.includes(string[i])) {
+      string = string.replace(string[i], '*');
+    }
+  }
+
+  return string;
+  
+}
 
 // Return the given string in sticky case.
 // Ex.:
 //   stickyCase('hello world');
 //   => 'hElLo wOrLd'
-function stickyCase(string) {}
+function stickyCase(string) {
+  let newString = ''
+
+  for (let i = 0; i < string.length; i++) {
+    const isEven = i % 2 === 0;
+
+    if (isEven) {
+      newString = newString + string[i].toUpperCase()
+    } else {
+      newString = newString + string[i].toLowerCase()
+    }
+  }
+
+  return newString;
+}
+
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
 // English where characters are replaced by numbers or symbols. For this
@@ -71,7 +99,16 @@ function stickyCase(string) {}
 // Ex.:
 //   leetspeak('javascript');
 //   => 'j4v45cr1p7'
-function leetspeak(string) {}
+function leetspeak(string) {
+string.replaceAll('a', '4')
+string.replaceAll('e', '3')
+string.replaceAll('i', '1')
+string.replaceAll('o', '0')
+string.replaceAll('s', '5')
+string.replaceAll('t', '7')
+
+return string
+}
 
 export {
   approximatelyEqual,
