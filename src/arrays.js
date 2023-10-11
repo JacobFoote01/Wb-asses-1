@@ -19,20 +19,18 @@ function greaterThanTen(numbers) {
 function bWords(words) {
   let b = [];
   for (const word of words) {
-    if (word[0].toUppercase() === "B") b.push(word);
+    if (word[0].toUpperCase() === "B") b.push(word);
   }
   return b
 }
-
 // Add all the elements from additionalItems to the end of originalArray.
 // Return the originalArray..
 // Ex.:
 //  extend([1, 2, 3], [4, 5, 6]);
 //  => [1, 2, 3, 4, 5, 6]
 function extend(originalArray, additionalItems) {
-  additionalItems.concat(originalArray);
-
-  return additionalItems; // [1, 2, 3, [4, 5, 6]]
+  originalArray = originalArray.concat(additionalItems)
+  return originalArray // [1, 2, 3, [4, 5, 6]]
 }
 
 // Return an array of all items with the given length.
@@ -45,7 +43,7 @@ function itemsWithLength(items, length) {
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
 
-    if (item.length === 3) {
+    if (item.length === length) {
       newArray.push(item)
     } 
   }
@@ -59,13 +57,8 @@ function itemsWithLength(items, length) {
 function everyOtherItem(items) {
   const newArray = [];
 
-  for (let i = 0; i < items.length; i++) {
-    const isOdd = i % 2 !== 0
-    const item = items[i];
-
-    if (isOdd) {
-      newArray.push(item)
-    } 
+  for (let i = 0; i < items.length; i += 2) {
+      newArray.push(items[i]) 
   }
 
   return newArray
@@ -78,14 +71,19 @@ function everyOtherItem(items) {
 // Ex.:
 //   findWordsStartingWith(['apple', 'banana', 'kiwi', 'pear', 'bacon'], 'b');
 //   => [1, 4]
+
 function findWordsStartingWith(words, letter) {
   let array = [];
 
-  for (const [index, word] of words) {
-    if (word[0] === letter) b.push(index);
+  for (let index = 0; index < words.length; index++) {
+    const word = words[index];
+    
+    if (word[0] === letter) {
+      array.push(index);
+    }
   }
 
-  return array
+  return array;
 }
 
 // Return the `n` smallest values in the array in descending order (largest
@@ -97,7 +95,7 @@ function findWordsStartingWith(words, letter) {
 function smallestNItems(items, n) {
   const sortedItems = items.sort((a, b) => a - b)
 
-  return sortedItems.slice(0, 3).reverse()
+  return sortedItems.slice(0, n).reverse()
 }
 
 // Search for a value in the array and return its index. If the value appears
@@ -106,14 +104,18 @@ function smallestNItems(items, n) {
 // Ex.:
 //   findIndex(['a', 'b', 'c', 'a', 'b', 'c'], 'c');
 //   => 2
-function findIndex(items, value) {}
+function findIndex(items, value) {
+
+}
 
 // Given a start number and stop number, return a new array containing all the numbers
 // between the start and stop number.
 // Ex.:
 //   range(1, 5);
 //   => [1, 2, 3, 4, 5]
-function range(start, stop) {}
+function range(start, stop) {
+  
+}
 
 export {
   bWords,
